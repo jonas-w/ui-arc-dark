@@ -39,7 +39,7 @@ body {
 }
 
 .composer-participant-field .only-item {
-	background: transparent !important;
+	background: @arc-dark !important;
 }
 
 .sheet {
@@ -405,4 +405,12 @@ body.platform-win32 {
 .sheet-toolbar .btn-toolbar:only-of-type:hover{
  opacity: 1;
  transform: scale(1);
+}
+.composer-participant-field .content-container .item {
+	background: none !important;
+	background-color: @arc-accent !important;
+	&.selected {
+	background-color: darken(@arc-accent, 5%) !important;
+}
+
 }
